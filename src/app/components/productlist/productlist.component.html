@@ -1,4 +1,4 @@
-<div class="containes">
+<div class="containes" *ngIf="isFetchingUrl; else elseBlock"  >
     <div *ngFor="let item of apiProducts">
         <img src={{item.image}} alt="">
         <h1>{{item.title.substring(0,10)}}</h1>
@@ -7,3 +7,9 @@
         <button>buy now</button>
     </div>
 </div>
+
+<ng-template #elseBlock>
+    <h2>
+        {{errorMessage}}
+    </h2>
+</ng-template>

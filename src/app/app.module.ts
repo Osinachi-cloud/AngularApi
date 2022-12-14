@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import { ProductlistComponent } from './components/productlist/productlist.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -14,15 +14,17 @@ import {MatButtonModule} from '@angular/material/button';
 // import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { ApiService } from './service/api.service';
+import { MyformComponent } from './components/myform/myform.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    ProductlistComponent,
     CartComponent,
     ProductsComponent,
     DialogComponent,
+    MyformComponent,
  
   
   ],

@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "title": "shirt",
+      "price": 200,
+      "description": "awesome sales",
+      "productImage": "C:\\fakepath\\ OgbodoUchenna_Resume.pdf",
+      "id": 1
+    },
+    {
+      "title": "skirt",
+      "price": 400,
+      "description": "black november",
+      "productImage": "C:\\fakepath\\ OgbodoUchenna_Resume.pdf",
+      "id": 2
+    },
+    {
+      "title": "arab girl",
+      "price": 500,
+      "description": "pretty girl",
+      "productImage": "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 3
+    },
+    {
+      "title": "Princess",
+      "price": 600,
+      "description": "awesome looks",
+      "image": "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

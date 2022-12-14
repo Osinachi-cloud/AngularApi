@@ -12,6 +12,9 @@ export class ApiService {
 
 
   getProducts():Observable<any[]>{
-      return this.http.get<any>("https://fakestoreapi.com/products")
+      return this.http.get<any>("http://localhost:3000/products")
+  }
+  saveUser(data:any){
+    return this.http.post<any>(`http://localhost:3000/products`, data);
   }
 }

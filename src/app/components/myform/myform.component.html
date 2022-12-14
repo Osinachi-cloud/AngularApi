@@ -1,1 +1,17 @@
-<p>myform works!</p>
+<div class="container">
+    <p>myform works!</p>
+
+    <form #productForm="ngForm" (ngSubmit)="getProductFormData(productForm.value)">
+        <input type="text" ngModel name="title" placeholder="Enter product title">
+        <br> <br>
+        <input type="number" ngModel name="price" placeholder="Enter product price">
+        <br> <br>
+        <textarea type="password" ngModel name="description" placeholder="description">
+        </textarea>
+        <br> <br>
+        <input type="text" ngModel name="image">
+        <br> <br>
+        <button>Add new Product</button>
+    </form>
+</div>
+

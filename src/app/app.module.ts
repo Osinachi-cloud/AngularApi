@@ -15,6 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { ApiService } from './service/api.service';
 import { MyformComponent } from './components/myform/myform.component';
+import {FormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -25,8 +26,6 @@ import { MyformComponent } from './components/myform/myform.component';
     ProductsComponent,
     DialogComponent,
     MyformComponent,
- 
-  
   ],
   imports: [
     BrowserModule,
@@ -36,6 +35,7 @@ import { MyformComponent } from './components/myform/myform.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    FormsModule,
     // MatDialog
   ],
   providers: [ApiService],

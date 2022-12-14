@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-myform',
@@ -7,7 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyformComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService: ApiService) { }
+
+  getProductFormData(data:any){
+    this.apiService.saveUser(data)
+    .subscribe({
+      next:(res:any)=>{
+          console.log("success", res)
+      },
+      error:(err:any)=>{
+          console.log("error", err)
+      }
+    });
+  }
+  
 
   ngOnInit(): void {
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
 
 @Component({
@@ -12,12 +13,17 @@ export class ProductlistComponent implements OnInit{
   public apiProducts: any[] = [];
   errorMessage :string = "";
 
-  constructor(private apiService : ApiService) {
+  constructor(private apiService : ApiService, private router : Router ) {
 
   }
 
   getProducts(){
     return this.apiService.getProducts();
+  }
+  getProductDetails(id:number ){
+    console.log("hello world")
+    this.router.navigate(['products',id])
+
   }
   
   ngOnInit(){
@@ -25,6 +31,7 @@ export class ProductlistComponent implements OnInit{
       .subscribe({
         next:(data)=>{ 
           this.apiProducts = data
+          console.log(this.apiProducts);
         },
       error:(err)=>{
                 this.isFetchingUrl = false;

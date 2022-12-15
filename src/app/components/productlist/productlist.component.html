@@ -4,7 +4,7 @@
         <h1>{{item.title.substring(0,10)}}</h1>
         <h2>{{item.price | currency}}</h2>
         <span>{{item.description.substring(0,150)}}</span>
-        <button>buy now</button>
+        <button (click)="getProductDetails(item.id)">buy now</button>
     </div>
 </div>
 
